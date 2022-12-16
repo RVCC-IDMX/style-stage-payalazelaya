@@ -2,7 +2,9 @@
 
 @use "./functions" as func;
 
-$bg-color: gold;
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bree+Serif&display=swap');
+
+$bg-color: hsl(63, 98%, 82%);
 $bg-very-light: func.tint($bg-color, 50%);
 $bg-light: func.tint($bg-color, 25%);
 $bg-medium: $bg-color;
@@ -10,9 +12,23 @@ $bg-dark: func.shade($bg-color, 25%);
 $bg-very-dark: func.shade($bg-color, 50%);
 
 
-$primary-color: rebeccapurple;
+$primary-color: hsl(217, 84%, 15%);
 $primary-very-light: func.tint($primary-color, 50%);
 $primary-light: func.tint($primary-color, 25%);
 $primary-medium: $primary-color;
 $primary-dark: func.shade($primary-color, 25%);
 $primary-very-dark: func.shade($primary-color, 50%);
+
+/* Fonts */
+$main-header-font: "Bree Serif", serif;
+$sub-header-font: "Bree Serif", serif;
+$body-font: "Alata", sans-serif;
+
+/* Colors */
+$secondary-color: hsl(225, 80%, 57%);
+$tertiary-color: hsl(226, 82%, 64%);
+$fourth-color: hsl(217, 60%, 72%);
+$fifth-color: hsl(213, 100%, 75%);
+$sixth-color: hsl(196, 100%, 75%);
+$border-underline: hsl(225, 84%, 88%);
+$lighter-border-underline: hsl(225, 94%, 65%)

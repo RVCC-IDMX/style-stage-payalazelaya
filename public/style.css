@@ -1,0 +1,249 @@
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bree+Serif&display=swap");
+/* functions */
+/* Fonts */
+/* Colors */
+/* main */
+/* main */
+/* base */
+/* Take out margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up lists */
+:where(ul, ol) {
+  list-style-position: inside;
+}
+
+:where(ul) {
+  list-style: none;
+}
+
+/* SVG */
+svg {
+  max-width: 1rem;
+}
+
+/* Layout */
+body {
+  padding: 2rem 0.75rem 2rem 0.5rem;
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+/* Set line length for things with text */
+p,
+li {
+  max-width: 55ch;
+}
+
+/* Make big elements a grid with vertical spacing for their children */
+body {
+  display: grid;
+  gap: 2rem;
+}
+
+#about,
+#guidelines,
+#contribute,
+.container,
+ul,
+ol {
+  display: grid;
+  gap: 1rem;
+}
+
+#about,
+#guidelines,
+#contribute,
+header .container,
+.profile .container,
+#styles .container {
+  padding: 1rem;
+}
+
+header .container,
+footer .container {
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Typography */
+body {
+  font-family: "Alata", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Bree Serif", serif;
+  font-size: clamp(5.5rem, 2rem + 13vw, 10rem);
+  line-height: 0.9;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Bree Serif", serif;
+  line-height: 1;
+}
+
+h2 {
+  font-size: clamp(2rem, 1rem + 5vw, 2.7rem);
+  max-width: 50rem;
+}
+
+h3,
+h4 {
+  font-size: 1.7rem;
+}
+
+/* Header */
+header .link-github {
+  padding: 0.7rem;
+  width: 10rem;
+  text-decoration: none;
+  display: block;
+  margin-block-end: 2em;
+  justify-self: center;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav li a:visited {
+  color: hsl(0deg, 0%, 75%);
+}
+
+nav ul li a {
+  text-decoration: 3px underline hsl(225deg, 84%, 88%);
+}
+
+nav ul li a {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Skip Link Styling */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 0.5em;
+  line-height: 1.5;
+  background-color: darkblue;
+  color: white;
+  opacity: 0;
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+/* Colors, Backgrounds & Borders */
+body {
+  color: hsl(217deg, 84%, 15%);
+  background-color: hsl(63deg, 98%, 82%);
+  background-image: url("https://raw.githubusercontent.com/RVCC-IDMX/style-mobile-first-payalazelaya/main/src/images/background.jpg");
+  background-repeat: repeat-y;
+}
+
+header .container,
+footer .container {
+  background-color: hsl(63deg, 98%, 82%);
+  border: thick double hsl(217deg, 84%, 15%);
+}
+
+#about,
+#guidelines,
+#contribute {
+  background-color: hsl(213deg, 100%, 75%);
+  color: hsl(217deg, 84%, 15%);
+  padding: 1em;
+  border: 4px solid hsl(63deg, 98%, 82%);
+  border-radius: 4px;
+  box-shadow: 5px 5px hsl(217deg, 84%, 15%);
+}
+
+.profile .container,
+#styles .container {
+  background-color: hsl(196deg, 100%, 75%);
+  border: 4px solid hsl(63deg, 98%, 82%);
+  border-radius: 4px;
+  box-shadow: 4px 4px hsl(217deg, 84%, 15%);
+}
+
+header .link-github {
+  background-color: #fbfebb;
+  outline: 1px solid hsl(225deg, 80%, 57%);
+  border-radius: 4px;
+  box-shadow: 4px 4px hsl(225deg, 80%, 57%);
+}
+
+nav li a:link,
+nav li a:link:active,
+nav li a:visited {
+  color: white;
+}
+
+nav ul {
+  background-color: hsl(217deg, 84%, 15%);
+  border-radius: 4px;
+  box-shadow: 4px 4px hsl(226deg, 82%, 64%);
+}
+
+nav ul li a:after {
+  background-color: hsl(225deg, 94%, 65%);
+}
+
+blockquote {
+  margin-block: 1rem;
+  background-color: hsl(63deg, 98%, 82%);
+  padding: 0.7rem;
+  padding-block: 1rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px hsl(217deg, 84%, 15%);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.02ms !important;
+    scroll-behavior: auto !important;
+  }
+}

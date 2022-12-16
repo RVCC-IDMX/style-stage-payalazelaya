@@ -1,1 +1,260 @@
 /* main */
+/* main */
+@use "./base/reset";
+@use "./abstracts/variables" as var;
+
+/* base */
+
+/* Take out margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up lists */
+:where(ul, ol) {
+    list-style-position: inside;
+}
+
+:where(ul) {
+    list-style: none;
+}
+
+/* SVG */
+
+svg {
+    max-width: 1rem;
+}
+
+/* Layout */
+body {
+    padding: 2rem 0.75rem 2rem 0.5rem;
+    max-width: 60ch;
+    margin-inline: auto;
+}
+
+/* Set line length for things with text */
+p,
+li {
+    max-width: 55ch;
+}
+
+/* Make big elements a grid with vertical spacing for their children */
+body {
+    display: grid;
+    gap: 2rem;
+}
+
+#about,
+#guidelines,
+#contribute,
+.container,
+ul,
+ol {
+    display: grid;
+    gap: 1rem;
+    // outline: 1px solid;
+}
+
+#about,
+#guidelines,
+#contribute,
+header .container,
+.profile .container,
+#styles .container {
+    padding: 1rem;
+}
+
+header .container,
+footer .container {
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+
+
+/* Typography */
+
+body {
+    font-family: var.$body-font;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: var.$main-header-font;
+    font-size: clamp(5.5rem, 2rem + 13vw, 10rem);
+    line-height: 0.9;
+    margin: 0; // needed to override reset default
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    font-family: var.$sub-header-font;
+    line-height: 1;
+}
+
+h2 {
+    font-size: clamp(2rem, 1rem + 5vw, 2.7rem);
+    max-width: 50rem;
+}
+
+h3,
+h4 {
+    font-size: 1.7rem;
+}
+
+
+
+/* Header */
+
+header .link-github {
+    padding: 0.7rem;
+    width: 10rem;
+    text-decoration: none;
+    display: block;
+    margin-block-end: 2em;
+    justify-self: center;
+}
+
+/* Navigation Bar Styling */
+
+nav ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+nav li a:visited {
+    color: hsl(0, 0%, 75%);
+}
+
+nav ul li a {
+    text-decoration: 3px underline var.$border-underline;
+}
+
+nav ul li a {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.20s ease-out;
+}
+
+nav ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Skip Link Styling */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 0.5em;
+    line-height: 1.5;
+    background-color: darkblue;
+    color: white;
+    opacity: 0;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+/* Colors, Backgrounds & Borders */
+
+body {
+    color: var.$primary-color;
+    background-color: var.$bg-color;
+    background-image: url("https://raw.githubusercontent.com/RVCC-IDMX/style-mobile-first-payalazelaya/main/src/images/background.jpg");
+    background-repeat: repeat-y;
+}
+
+
+header .container,
+footer .container {
+    background-color: var.$bg-color;
+    border: thick double var.$primary-color;
+}
+
+#about,
+#guidelines,
+#contribute {
+    background-color: var.$fifth-color;
+    color: var.$primary-color;
+    padding: 1em;
+    border: 4px solid var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 5px 5px var.$primary-color;
+}
+
+.profile .container,
+#styles .container {
+    background-color: var.$sixth-color;
+    border: 4px solid var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+header .link-github {
+    background-color: var.$bg-light;
+    outline: 1px solid var.$secondary-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$secondary-color;
+}
+
+nav li a:link,
+nav li a:link:active,
+nav li a:visited {
+    color: white;
+}
+
+nav ul {
+    background-color: var.$primary-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$tertiary-color;
+}
+
+nav ul li a:after {
+    background-color: var.$lighter-border-underline;
+}
+
+blockquote {
+    margin-block: 1rem;
+    background-color: var.$bg-color;
+    padding: 0.7rem;
+    padding-block: 1rem;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.02ms !important;
+        scroll-behavior: auto !important;
+      }
+}
