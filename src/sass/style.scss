@@ -42,7 +42,7 @@ li {
 
 article#about ul {
 	margin: 0;
-	padding: 15px;
+	padding: 20px;
 }
 
 article#about li {
@@ -163,7 +163,7 @@ header .link-github {
     display: block;
     margin-block-end: 2em;
     justify-self: center;
-    
+
     :focus-visible {
         border: 1px solid var.$secondary-color;
     }
@@ -305,6 +305,12 @@ footer .container {
     border: 4px solid var.$bg-color;
     border-radius: 4px;
     box-shadow: 5px 5px var.$primary-color;
+}
+
+article#about ul {
+    background-color: var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color
 }
 
 .profile .container,
