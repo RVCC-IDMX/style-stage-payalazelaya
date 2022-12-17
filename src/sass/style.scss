@@ -364,22 +364,22 @@ blockquote {
 
 /*Links*/
 a {
-  color: hsl(241, 100%, 36%);
+  color: var.$link-color;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: hsl(241, 100%, 9%);
+  color: var.$link-hover-color;
   text-decoration: underline;
 }
 
 a:visited {
-  color: hsl(253, 55%, 37%);
+  color: var.$link-visited-color;
 }
 
 a:active {
-  color: hsl(231, 80%, 30%);
+  color: var.$link-active-color;
 }
  
 /* Accessibility */
