@@ -58,13 +58,35 @@ article#about li::before {
     border-radius: 4px;
     width: 8px;
     height: 8px;
-    background-color: var.$secondary-color;
+    background-color: var.$primary-very-dark;
     position: absolute;
     top: 15px;
     left: -10px;
     transform: translate(-50%, -50%);
 }
 
+article#contribute ol {
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+}
+
+article#contribute li {
+    position: relative;
+}
+
+article#contribute li::before {
+    content: "";
+    display: block;
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: var.$primary-color;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    transform: translate(-50%, -50%);
+}
 
 /* Make big elements a grid with vertical spacing for their children */
 body {
@@ -132,7 +154,7 @@ h4 {
 }
 
 article#about li {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Header */

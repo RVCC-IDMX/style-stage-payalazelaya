@@ -58,7 +58,30 @@ article#about li::before {
   border-radius: 4px;
   width: 8px;
   height: 8px;
-  background-color: hsl(225deg, 80%, 57%);
+  background-color: #031023;
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  transform: translate(-50%, -50%);
+}
+
+article#contribute ol {
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+}
+
+article#contribute li {
+  position: relative;
+}
+
+article#contribute li::before {
+  content: "";
+  display: block;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: hsl(217deg, 84%, 15%);
   position: absolute;
   top: 15px;
   left: -10px;
@@ -129,7 +152,7 @@ h4 {
 }
 
 article#about li {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Header */
