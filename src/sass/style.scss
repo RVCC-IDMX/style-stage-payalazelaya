@@ -371,7 +371,7 @@ a {
 
 a:hover {
   color: var.$link-hover-color;
-  text-decoration: underline;
+  text-decoration: 2px underline var.$primary-very-dark;
 }
 
 a:visited {
@@ -381,7 +381,7 @@ a:visited {
 a:active {
   color: var.$link-active-color;
 }
- 
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
       *,

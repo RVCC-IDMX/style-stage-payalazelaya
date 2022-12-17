@@ -363,7 +363,7 @@ a {
 
 a:hover {
   color: hsl(241deg, 100%, 9%);
-  text-decoration: underline;
+  text-decoration: 2px underline #031023;
 }
 
 a:visited {
