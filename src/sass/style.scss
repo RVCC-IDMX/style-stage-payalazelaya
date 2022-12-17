@@ -25,9 +25,6 @@
 
 svg {
     max-width: 1rem;
-    :focus-visible {
-        border: 1px solid var.$secondary-color;
-    }
 }
 
 /* Layout */
@@ -166,6 +163,10 @@ header .link-github {
     display: block;
     margin-block-end: 2em;
     justify-self: center;
+    
+    :focus-visible {
+        border: 1px solid var.$secondary-color;
+    }
 }
 
 header .link-github:hover {
