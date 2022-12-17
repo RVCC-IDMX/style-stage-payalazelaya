@@ -32,3 +32,6 @@
 
 [Animista](https://animista.net/)
 
+### Attributions
+Background Image by [Tammy Osaokia]("https://pixabay.com/users/artbytammy-16825794/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5252152") from [Pixabay]("https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5252152")>
+
