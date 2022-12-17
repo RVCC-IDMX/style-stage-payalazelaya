@@ -27,7 +27,7 @@ svg {
   max-width: 1rem;
 }
 svg :focus-visible {
-  outline: 1px solid hsl(217deg, 84%, 15%);
+  border: 1px solid hsl(225deg, 80%, 57%);
 }
 
 /* Layout */
@@ -167,6 +167,9 @@ header .link-github {
 
 header .link-github:hover {
   background-color: hsl(56deg, 75%, 66%);
+}
+header .link-github:hover :focus-visible {
+  border: 1px solid hsl(225deg, 80%, 57%);
 }
 
 header .link-github:active {
