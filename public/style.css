@@ -26,6 +26,9 @@
 svg {
   max-width: 1rem;
 }
+svg :focus-visible {
+  outline: 1px solid hsl(217deg, 84%, 15%);
+}
 
 /* Layout */
 body {
@@ -38,6 +41,28 @@ body {
 p,
 li {
   max-width: 55ch;
+}
+
+article#about ul {
+  margin: 0;
+  padding: 15px;
+}
+
+article#about li {
+  position: relative;
+}
+
+article#about li::before {
+  content: "";
+  display: block;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: hsl(225deg, 80%, 57%);
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  transform: translate(-50%, -50%);
 }
 
 /* Make big elements a grid with vertical spacing for their children */
@@ -101,6 +126,10 @@ h2 {
 h3,
 h4 {
   font-size: 1.7rem;
+}
+
+article#about li {
+  font-weight: bold;
 }
 
 /* Header */
