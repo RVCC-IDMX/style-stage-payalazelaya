@@ -313,9 +313,18 @@ article#about ul {
     box-shadow: 4px 4px var.$primary-color
 }
 
-.profile #profile-title {
+.profile .container {
     background-color: var.$sixth-color;
     border: 4px solid var.$bg-color;
+    border-radius: 4px;
+    box-shadow: 4px 4px var.$primary-color;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.profile ul {
+    background-color: var.$ninth-color;
+    border: 4px solid var.$seventh-color;
     border-radius: 4px;
     box-shadow: 4px 4px var.$primary-color;
     padding: 0.5em;
