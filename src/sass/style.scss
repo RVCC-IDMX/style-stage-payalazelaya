@@ -313,7 +313,8 @@ article#about ul {
     box-shadow: 4px 4px var.$primary-color
 }
 
-.profile .container {
+.profile .container,
+#styles .container {
     background-color: var.$sixth-color;
     border: 4px solid var.$bg-color;
     border-radius: 4px;
@@ -322,38 +323,12 @@ article#about ul {
     text-align: center;
 }
 
-.profile ul {
-    background-color: var.$ninth-color;
-    border: 4px solid var.$seventh-color;
-    border-radius: 4px;
-    box-shadow: 4px 4px var.$primary-color;
-    padding: 0.5em;
-    text-align: center;
-}
-
-#styles h2 {
-    background-color: var.$sixth-color;
-    border: 4px solid var.$bg-color;
-    border-radius: 4px;
-    box-shadow: 4px 4px var.$primary-color;
-    padding: 0.5em;
-    text-align: center;
-}
-
+.profile ul,
 #styles .features {
     background-color: var.$ninth-color;
     border: 4px solid var.$seventh-color;
     border-radius: 4px;
     box-shadow: 4px 4px var.$primary-color;
-    padding: 0.5em;
-    text-align: center;
-}
-
-#styles .link-allstyles {
-    background-color: var.$sixth-color;
-    border: 4px solid var.$bg-color;
-    border-radius: 4px;
-    box-shadow: 4px 4px var.$primary-dark;
     padding: 0.5em;
     text-align: center;
 }
