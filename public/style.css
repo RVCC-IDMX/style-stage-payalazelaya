@@ -178,8 +178,8 @@ header .link-github:active {
 }
 
 h1 {
-  -webkit-animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: shadow-drop-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -352,6 +352,26 @@ blockquote {
   padding-block: 1rem;
   border-radius: 4px;
   box-shadow: 4px 4px hsl(217deg, 84%, 15%);
+}
+
+/*Links*/
+a {
+  color: hsl(241deg, 100%, 36%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: hsl(241deg, 100%, 9%);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: hsl(253deg, 55%, 37%);
+}
+
+a:active {
+  color: hsl(231deg, 80%, 30%);
 }
 
 /* Accessibility */

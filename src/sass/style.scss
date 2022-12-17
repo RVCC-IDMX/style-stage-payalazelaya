@@ -182,8 +182,8 @@ header .link-github:active {
 }
 
 h1 {
-	-webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: shadow-drop-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: shadow-drop-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ----------------------------------------------
@@ -289,7 +289,6 @@ body {
     background-repeat: repeat-y;
 }
 
-
 header .container,
 footer .container {
     background-color: var.$bg-color;
@@ -362,6 +361,27 @@ blockquote {
     border-radius: 4px;
     box-shadow: 4px 4px var.$primary-color;
 }
+
+/*Links*/
+a {
+  color: hsl(241, 100%, 36%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: hsl(241, 100%, 9%);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: hsl(253, 55%, 37%);
+}
+
+a:active {
+  color: hsl(231, 80%, 30%);
+}
+ 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
       *,
