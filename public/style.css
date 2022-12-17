@@ -162,14 +162,14 @@ header .link-github {
   justify-self: center;
 }
 header .link-github :focus-visible {
-  border: 1px solid hsl(225deg, 80%, 57%);
+  border: 1px solid hsl(217deg, 84%, 15%);
 }
 
 header .link-github:hover {
   background-color: hsl(56deg, 75%, 66%);
 }
 header .link-github:hover :focus-visible {
-  border: 1px solid hsl(225deg, 80%, 57%);
+  border: 1px solid hsl(217deg, 84%, 15%);
 }
 
 header .link-github:active {
@@ -178,8 +178,8 @@ header .link-github:active {
 }
 
 h1 {
-  -webkit-animation: shadow-drop-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-center 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -304,18 +304,44 @@ article#about ul {
   box-shadow: 4px 4px hsl(217deg, 84%, 15%);
 }
 
-.profile .container,
-#styles .container {
+.profile #profile-title {
   background-color: hsl(196deg, 100%, 75%);
   border: 4px solid hsl(63deg, 98%, 82%);
   border-radius: 4px;
   box-shadow: 4px 4px hsl(217deg, 84%, 15%);
+  padding: 0.5em;
+  text-align: center;
+}
+
+#styles h2 {
+  background-color: hsl(196deg, 100%, 75%);
+  border: 4px solid hsl(63deg, 98%, 82%);
+  border-radius: 4px;
+  box-shadow: 4px 4px hsl(217deg, 84%, 15%);
+  padding: 0.5em;
+  text-align: center;
+}
+
+#styles .features {
+  background-color: hsl(56deg, 79%, 74%);
+  border: 4px solid hsl(56deg, 100%, 40%);
+  border-radius: 4px;
+  box-shadow: 4px 4px hsl(217deg, 84%, 15%);
+  padding: 0.5em;
+  text-align: center;
+}
+
+#styles .link-allstyles {
+  background-color: hsl(196deg, 100%, 75%);
+  border: 4px solid hsl(63deg, 98%, 82%);
+  border-radius: 4px;
+  box-shadow: 4px 4px #051735;
+  padding: 0.5em;
+  text-align: center;
 }
 
 header .link-github {
   background-color: #fbfebb;
-  outline: 1px solid hsl(225deg, 80%, 57%);
-  border-radius: 4px;
   box-shadow: 4px 4px hsl(225deg, 80%, 57%);
 }
 
