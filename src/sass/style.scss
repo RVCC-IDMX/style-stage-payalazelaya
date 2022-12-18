@@ -85,6 +85,27 @@ article#contribute li::before {
     transform: translate(-50%, -50%);
 }
 
+.page-footer ul {
+    margin: 0;
+    padding-inline-start: 20px;
+}
+
+.page-footer li {
+    position: relative;
+}
+
+.page-footer li::before {
+    content: "";
+    display: block;
+    border-radius: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: var.$primary-color;
+    position: absolute;
+    top: 13px;
+    left: -10px;
+    transform: translate(-50%, -50%);
+}
 /* Make big elements a grid with vertical spacing for their children */
 body {
     display: grid;
