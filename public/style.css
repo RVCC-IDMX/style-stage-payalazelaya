@@ -101,6 +101,12 @@ ol {
   gap: 1rem;
 }
 
+.profile .container,
+#styles .container {
+  display: grid;
+  justify-items: center;
+}
+
 #about,
 #guidelines,
 #contribute,

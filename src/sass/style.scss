@@ -102,6 +102,12 @@ ol {
     // outline: 1px solid;
 }
 
+.profile .container,
+#styles .container {
+    display: grid;
+    justify-items: center;
+}
+
 #about,
 #guidelines,
 #contribute,
