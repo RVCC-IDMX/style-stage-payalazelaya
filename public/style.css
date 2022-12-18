@@ -423,6 +423,8 @@ a:active {
   *,
   *::before,
   *::after {
+    animation-duration: 0.03ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.02ms !important;
     scroll-behavior: auto !important;
   }
